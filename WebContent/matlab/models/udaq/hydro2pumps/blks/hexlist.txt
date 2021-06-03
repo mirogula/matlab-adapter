@@ -1,0 +1,11 @@
+
+Zaciatok riadku s nazvom suboru experimentu vzdy v tvare '$$n \'
+kde n je cislo experimentu, potom ide popis experimentu,
+na konci suboru tiez $$.
+Spusti len m-files nachadzajuce sa priamo alebo v podadresaroch 
+matlabroot\udaq\hydro2pumps\myschemes.
+
+$$1 \init_hydro2pumps_iov2.m
+Zakladna schema na manipulaciu so sustavou - 
+ovladanie vstupov, sledovanie vystupov
+$$

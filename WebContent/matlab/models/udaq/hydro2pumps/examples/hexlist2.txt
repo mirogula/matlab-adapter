@@ -1,0 +1,13 @@
+EXPERIMENT 1
+
+Zakladna schema na manipulaciu so sustavou - 
+ovladanie vstupov, sledovanie vystupov.
+
+myschemes\init_hydro2pumps_iov1.m
+
+EXPERIMENT 2
+
+Zakladna schema na manipulaciu so sustavou - 
+ovladanie vstupov, sledovanie vystupov.
+
+myschemes\init_hydro2pumps_iov2.m

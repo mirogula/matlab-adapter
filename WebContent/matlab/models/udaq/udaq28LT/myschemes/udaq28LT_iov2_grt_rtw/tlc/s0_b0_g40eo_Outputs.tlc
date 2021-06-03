@@ -1,0 +1,22 @@
+%implements s0_b0_g40eo_Outputs "C"
+
+%function Outputs(block, system) Output
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_Fan1
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2)
+%assign tlcOutputsFcnOfS0B3 = OpaqueTLCBlockFcn("Outputs", 0, 3)
+%assign tlcOutputsFcnOfS0B4 = OpaqueTLCBlockFcn("Outputs", 0, 4)
+%assign tlcOutputsFcnOfS0B5 = OpaqueTLCBlockFcn("Outputs", 0, 5)
+%assign tlcOutputsFcnOfS0B6 = OpaqueTLCBlockFcn("Outputs", 0, 6)
+%<tlcOutputsFcnOfS0B0>\
+%<tlcOutputsFcnOfS0B1>\
+%<tlcOutputsFcnOfS0B2>\
+%<tlcOutputsFcnOfS0B3>\
+%<tlcOutputsFcnOfS0B4>\
+%<tlcOutputsFcnOfS0B5>\
+%<tlcOutputsFcnOfS0B6>\
+
+/* Constant: '<Root>/Fan1' */
+rtb_Fan1 = %<SLibCGIR_PV(16, 0, 0, 1, "", -1, "", 0)>;
+%endfunction

@@ -1,0 +1,1440 @@
+Model {
+  Name			  "model_3_nadoby"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Nov 08 23:54:35 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "student"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Oct 09 16:22:07 2009"
+  ModelVersionFormat	  "1.%<AutoIncrement:164>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "300"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "logsout"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aFoldNonRolledExpr=1 -a"
+"InlineInvariantSignals=1 -aInlineParameters=0 -aLocalBlockOutputs=1 -aRollThr"
+"eshold=5 -aZeroInternalMemoryAtStartup=1 -aZeroExternalMemoryAtStartup=1 -aIn"
+"itFltsAndDblsToZero=1 -aGenerateReport=0 -aGenCodeOnly=0 -aRTWVerbose=1 -aInc"
+"ludeHyperlinkInReport=0 -aLaunchReport=0 -aForceParamTrailComments=0 -aGenera"
+"teComments=1 -aIgnoreCustomStorageClasses=1 -aIncHierarchyInIds=0 -aMaxRTWIdL"
+"en=31 -aShowEliminatedStatements=0 -aPrefixModelToSubsysFcnNames=1 -aIncDataT"
+"ypeInIds=0 -aInsertBlockDesc=0 -aSimulinkBlockComments=1 -aInlinedPrmAccess="
+"\"Literals\"  -aSuppressErrorStatus=0 -aModelReferenceCompliant=1 -aSupportNo"
+"nInlinedSFcns=1 -aSupportContinuousTime=1 -aSupportComplex=1 -aSupportNonFini"
+"te=1 -aSupportAbsoluteTime=1 -aTargetFcnLib=\"ansi_tfl_tmw.mat\" -aMultiInsta"
+"nceERTCode=0 -aLogVarNameModifier=\"rt_\" -aIsPILTarget=0 -aCombineOutputUpda"
+"teFcns=0 -aGenerateASAP2=0 -aGenerateSampleERTMain=0 -aGenerateFullHeader=1 -"
+"aUtilityFuncGeneration=\"Auto\" -aIncludeFileDelimiter=\"Auto\" -aIncludeMdlT"
+"erminateFcn=1 -aPurelyIntegerCode=0 -aERTCustomFileBanners=0 -aRTWCAPIStates="
+"0 -aRTWCAPIParams=0 -aRTWCAPISignals=0 -aMatFileLogging=1 -aGenFloatMathFcnCa"
+"lls=\"ANSI_C\" -aExtModeMexFile=\"ext_comm\" -aExtModeTransport=0 -aExtModeSt"
+"aticAllocSize=1000000 -aExtModeTesting=0 -aExtModeStaticAlloc=0 -aExtMode=0  "
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "model_3_nadoby"
+    Location		    [358, 208, 985, 602]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Scope
+      Name		      "Prietok cerpadlo 1"
+      Ports		      [1]
+      Position		      [250, 24, 280, 56]
+      Location		      [167, 631, 491, 870]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-5e-031"
+      YMax		      "3.25e-030"
+      SaveToWorkspace	      on
+      SaveName		      "q1s"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Prietok cerpadlo2"
+      Ports		      [1]
+      Position		      [250, 199, 280, 231]
+      Location		      [167, 631, 491, 870]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-5e-031"
+      YMax		      "3.25e-030"
+      SaveToWorkspace	      on
+      SaveName		      "q1s1"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Prietok cerpadlo3"
+      Ports		      [1]
+      Position		      [250, 304, 280, 336]
+      Location		      [167, 631, 491, 870]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-5e-031"
+      YMax		      "3.25e-030"
+      SaveToWorkspace	      on
+      SaveName		      "q1s2"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Tank 1"
+      Ports		      [1]
+      Position		      [520, 59, 550, 91]
+      Location		      [951, 176, 1275, 415]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-5e-031"
+      YMax		      "3.25e-030"
+      SaveToWorkspace	      on
+      SaveName		      "h1s"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Tank 2"
+      Ports		      [1]
+      Position		      [520, 164, 550, 196]
+      Location		      [951, 482, 1275, 721]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-5e-031"
+      YMax		      "3.25e-030"
+      SaveToWorkspace	      on
+      SaveName		      "h2s"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Tank 3"
+      Ports		      [1]
+      Position		      [520, 269, 550, 301]
+      Location		      [951, 482, 1275, 721]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-5e-031"
+      YMax		      "3.25e-030"
+      SaveToWorkspace	      on
+      SaveName		      "h3s"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Two tank system"
+      Ports		      [3, 3]
+      Position		      [330, 23, 440, 337]
+      TreatAsAtomicUnit	      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Two tank system"
+	Location		[160, 166, 954, 847]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Q1"
+	  Position		  [15, 53, 45, 67]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Q2"
+	  Position		  [15, 288, 45, 302]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Q3"
+	  Position		  [15, 533, 45, 547]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "1/S1"
+	  Position		  [80, 44, 115, 76]
+	  Gain			  "1/A"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "1/S2"
+	  Position		  [80, 279, 115, 311]
+	  Gain			  "1/A"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "1/S3"
+	  Position		  [105, 524, 140, 556]
+	  Gain			  "1/A"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [450, 110, 480, 140]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [450, 330, 480, 360]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [450, 565, 480, 595]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator_1"
+	  Ports			  [1, 1]
+	  Position		  [245, 61, 275, 89]
+	  InitialCondition	  "lev1_init"
+	  LimitOutput		  on
+	  UpperSaturationLimit	  "0.26"
+	  LowerSaturationLimit	  "0"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator_2"
+	  Ports			  [1, 1]
+	  Position		  [245, 291, 275, 319]
+	  InitialCondition	  "lev2_init"
+	  LimitOutput		  on
+	  UpperSaturationLimit	  "0.26"
+	  LowerSaturationLimit	  "0"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator_3"
+	  Ports			  [1, 1]
+	  Position		  [230, 526, 260, 554]
+	  InitialCondition	  "lev3_init"
+	  LimitOutput		  on
+	  UpperSaturationLimit	  "0.26"
+	  LowerSaturationLimit	  "0"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn"
+	  Position		  [170, 180, 230, 210]
+	  Orientation		  "left"
+	  MATLABFcn		  "b12*sign(u(1)-u(2))*sqrt(abs(u(1)-u(2)))"
+	  OutputSignalType	  "real"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn1"
+	  Position		  [170, 420, 230, 450]
+	  Orientation		  "left"
+	  MATLABFcn		  "b23*sign(u(1)-u(2))*sqrt(abs(u(1)-u(2)))"
+	  OutputSignalType	  "real"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [270, 165, 315, 220]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "signals"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  Ports			  [2, 1]
+	  Position		  [290, 405, 335, 460]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "signals"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [3, 1]
+	  Position		  [185, 49, 210, 101]
+	  NamePlacement		  "alternate"
+	  Inputs		  "+--"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [4, 1]
+	  Position		  [190, 267, 220, 343]
+	  NamePlacement		  "alternate"
+	  Inputs		  "++--"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [3, 1]
+	  Position		  [170, 514, 195, 566]
+	  NamePlacement		  "alternate"
+	  Inputs		  "++-"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [500, 59, 525, 141]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  Position		  [500, 279, 525, 361]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch2"
+	  Position		  [500, 514, 525, 596]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "outflow1"
+	  Position		  [195, 114, 280, 136]
+	  Orientation		  "left"
+	  Expr			  "b1*sqrt(u+posun1)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "outflow2"
+	  Position		  [190, 359, 275, 381]
+	  Orientation		  "left"
+	  Expr			  "b2*sqrt(u+posun2)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "outflow3"
+	  Position		  [190, 609, 275, 631]
+	  Orientation		  "left"
+	  Expr			  "b3*sqrt(u+posun3)"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "h1"
+	  Position		  [555, 95, 585, 105]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "h2"
+	  Position		  [555, 315, 585, 325]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "h3"
+	  Position		  [555, 550, 585, 560]
+	  Port			  "3"
+	}
+	Line {
+	  SrcBlock		  "1/S1"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Integrator_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "h1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Q1"
+	  SrcPort		  1
+	  DstBlock		  "1/S1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator_1"
+	  SrcPort		  1
+	  Points		  [110, 0]
+	  Branch {
+	    Points		    [60, 0]
+	    Branch {
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 25]
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 50]
+	    Branch {
+	      DstBlock		      "outflow1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 55]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Q2"
+	  SrcPort		  1
+	  DstBlock		  "1/S2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  DstBlock		  "h2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator_2"
+	  SrcPort		  1
+	  Points		  [110, 0]
+	  Branch {
+	    Points		    [60, 0]
+	    Branch {
+	      Points		      [0, 15]
+	      DstBlock		      "Switch1"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -10]
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -100]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    Branch {
+	      DstBlock		      "outflow2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 50]
+	      DstBlock		      "Mux1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "outflow1"
+	  SrcPort		  1
+	  Points		  [-30, 0; 0, -35]
+	  DstBlock		  "Sum"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Integrator_2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1/S2"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [1, 0]
+	  SrcBlock		  "MATLAB Fcn"
+	  SrcPort		  1
+	  Points		  [-45, 0]
+	  Branch {
+	    Points		    [0, -120]
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 80]
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "MATLAB Fcn"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Q3"
+	  SrcPort		  1
+	  DstBlock		  "1/S3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "outflow2"
+	  SrcPort		  1
+	  Points		  [-20, 0; 0, -35]
+	  DstBlock		  "Sum1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "1/S3"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Integrator_3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator_3"
+	  SrcPort		  1
+	  Points		  [0, 0; 130, 0]
+	  Branch {
+	    Points		    [0, 80]
+	    DstBlock		    "outflow3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -95]
+	    DstBlock		    "Mux1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [55, 0]
+	    Branch {
+	      Points		      [0, -10]
+	      DstBlock		      "Switch2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 15]
+	      DstBlock		      "Switch2"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "outflow3"
+	  SrcPort		  1
+	  Points		  [-40, 0; 0, -65]
+	  DstBlock		  "Sum2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  DstBlock		  "MATLAB Fcn1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Fcn1"
+	  SrcPort		  1
+	  Points		  [-25, 0]
+	  Branch {
+	    Points		    [0, -120]
+	    DstBlock		    "Sum1"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "Sum2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  DstBlock		  "Switch2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Switch2"
+	  SrcPort		  1
+	  DstBlock		  "h3"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "Q1"
+	  Position		  [60, 48]
+	}
+	Annotation {
+	  Name			  "Q2"
+	  Position		  [60, 288]
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "pump1"
+      Ports		      [1, 1]
+      Position		      [140, 45, 180, 105]
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"pump1"
+	Location		[377, 168, 912, 416]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [25, 38, 55, 52]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [175, 75, 205, 105]
+	  Value			  "prepni"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  Position		  [345, 75, 375, 105]
+	  UpperLimit		  "q_max1"
+	  LowerLimit		  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [260, 25, 290, 155]
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "U->Q1"
+	  Position		  [170, 35, 225, 55]
+	  Expr			  "2.8337e-8*u(1)^3-8.0615e-7*u(1)^2+8.1168e-6"
+"*u(1)-1.3426e-5"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "rozsah->U"
+	  Position		  [80, 29, 140, 61]
+	  Gain			  "12/100"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "rozsah->U1"
+	  Position		  [170, 118, 220, 152]
+	  Gain			  "1.387902622470500e-006"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [415, 83, 445, 97]
+	}
+	Line {
+	  SrcBlock		  "rozsah->U"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "U->Q1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "rozsah->U1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "U->Q1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "rozsah->U1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "rozsah->U"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Saturation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "pump2"
+      Ports		      [1, 1]
+      Position		      [140, 150, 180, 210]
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"pump2"
+	Location		[377, 168, 886, 396]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [25, 38, 55, 52]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [175, 75, 205, 105]
+	  Value			  "prepni"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  Position		  [325, 75, 355, 105]
+	  UpperLimit		  "q_max2"
+	  LowerLimit		  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [260, 25, 290, 155]
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "U->Q1"
+	  Position		  [170, 35, 225, 55]
+	  Expr			  "2.8337e-8*u(1)^3-8.0615e-7*u(1)^2+8.1168e-6"
+"*u(1)-1.3426e-5"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "rozsah->U"
+	  Position		  [80, 29, 140, 61]
+	  Gain			  "12/100"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "rozsah->U1"
+	  Position		  [170, 118, 220, 152]
+	  Gain			  "1.387902622470500e-006"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [390, 83, 420, 97]
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "rozsah->U"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "rozsah->U1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "U->Q1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "rozsah->U"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "rozsah->U1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "U->Q1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Saturation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "pump3"
+      Ports		      [1, 1]
+      Position		      [140, 255, 180, 315]
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"pump3"
+	Location		[377, 168, 886, 396]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [25, 38, 55, 52]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [175, 75, 205, 105]
+	  Value			  "prepni"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  Position		  [325, 75, 355, 105]
+	  UpperLimit		  "q_max2"
+	  LowerLimit		  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [260, 25, 290, 155]
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "U->Q1"
+	  Position		  [170, 35, 225, 55]
+	  Expr			  "2.8337e-8*u(1)^3-8.0615e-7*u(1)^2+8.1168e-6"
+"*u(1)-1.3426e-5"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "rozsah->U"
+	  Position		  [80, 29, 140, 61]
+	  Gain			  "12/100"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "rozsah->U1"
+	  Position		  [170, 118, 220, 152]
+	  Gain			  "1.387902622470500e-006"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [390, 83, 420, 97]
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Saturation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "rozsah->U"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "U->Q1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "rozsah->U1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "U->Q1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "rozsah->U1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "rozsah->U"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "rozsah1"
+      Position		      [15, 60, 105, 90]
+      ShowName		      off
+      Value		      "q1_percenta"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "rozsah2"
+      Position		      [15, 165, 105, 195]
+      ShowName		      off
+      Value		      "q2_percenta"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "rozsah3"
+      Position		      [15, 270, 105, 300]
+      ShowName		      off
+      Value		      "q3_percenta"
+    }
+    Line {
+      SrcBlock		      "Two tank system"
+      SrcPort		      1
+      DstBlock		      "Tank 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "rozsah1"
+      SrcPort		      1
+      DstBlock		      "pump1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pump1"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"Two tank system"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -35]
+	DstBlock		"Prietok cerpadlo 1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "rozsah2"
+      SrcPort		      1
+      DstBlock		      "pump2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pump2"
+      SrcPort		      1
+      Points		      [0, 0; 45, 0]
+      Branch {
+	Points			[0, 35]
+	DstBlock		"Prietok cerpadlo2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Two tank system"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Two tank system"
+      SrcPort		      2
+      DstBlock		      "Tank 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "rozsah3"
+      SrcPort		      1
+      DstBlock		      "pump3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pump3"
+      SrcPort		      1
+      Points		      [0, 0; 45, 0]
+      Branch {
+	Points			[0, 35]
+	DstBlock		"Prietok cerpadlo3"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Two tank system"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "Two tank system"
+      SrcPort		      3
+      DstBlock		      "Tank 3"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "level1"
+      Position		      [482, 65]
+    }
+    Annotation {
+      Name		      "level2"
+      Position		      [479, 196]
+    }
+    Annotation {
+      Name		      "level3"
+      Position		      [479, 301]
+    }
+  }
+}

@@ -1,0 +1,524 @@
+Library {
+  Name			  "tp264967"
+  Version		  3.0
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Jun 07 14:57:17 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "mato"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 16 11:26:50 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:8>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  SimulationMode	  "normal"
+  AlgebraicLoopMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  UnnecessaryDatatypeConvMsg "none"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "tp264967"
+    Location		    [2, 82, 1014, 718]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Inport
+      Name		      "Bulb"
+      Position		      [35, 178, 65, 192]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "1"
+      PortWidth	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      SignalType	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Fan"
+      Position		      [35, 263, 65, 277]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "2"
+      PortWidth	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      SignalType	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "LED"
+      Position		      [35, 348, 65, 362]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "3"
+      PortWidth	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      SignalType	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Bulb1"
+      Position		      [435, 178, 465, 192]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "4"
+      PortWidth	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      SignalType	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Fan1"
+      Position		      [435, 263, 465, 277]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "5"
+      PortWidth	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      SignalType	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "LED1"
+      Position		      [435, 348, 465, 362]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "6"
+      PortWidth	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      SignalType	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [40, 86, 70, 114]
+      FontName		      "Arial"
+      FontSize		      14
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock1"
+      Position		      [440, 86, 470, 114]
+      FontName		      "Arial"
+      FontSize		      14
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "S-Function"
+      Ports		      [4, 6, 0, 0, 0]
+      Position		      [110, 56, 225, 399]
+      ShowName		      off
+      Priority		      "1"
+      FontName		      "Arial"
+      FontSize		      14
+      FunctionName	      "udaq28LT_v1R13"
+      Parameters	      "com_port, Ts, events_ot, rd_timeout, matlab_pri"
+"or, warning, printout"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+      MaskType		      "uDAQ28/LT Communication Interface"
+      MaskDescription	      " (c) 2006 Martin Kamensky\n\nSerial port - USB "
+"serial port number assigned to uDAQ28/LT system\n\nSampling time (sec) - the "
+"lowest working value in Windows is about 0.04 - 0.05 s\n\nSample delayed (%) "
+"- number of events (percentually) when simulink loop can take more than time "
+"determined by sample time\n\nRead timeout (msec) - timeout for reading data f"
+"rom the port (the lowest working value is about 25 ms)\n\nMatlab priority :\n"
+"NORMAL_PRIORITY - priority of common Windows application\nABOVE_NORMAL_PRIORI"
+"TY - recommended - higher priority than common Windows application priority\n"
+"HIGH_PRIORITY - recommended - high priority \nREALTIME_PRIORITY - NOT recomme"
+"nded - takes almost all system resources\n"
+      MaskPromptString	      "Serial port:|Sample time (sec):|Sampling delaye"
+"d (%):|Read timeout (msec, lower than sample time):|Matlab priority|Warning i"
+"f delayed (error if unchecked)|Detailed timing and timeout  printout"
+      MaskStyleString	      "popup(COM1|COM2|COM3|COM4),edit,edit,edit,popup"
+"(NORMAL_PRIORITY|ABOVE_NORMAL_PRIORITY|HIGH_PRIORITY|REALTIME_PRIORITY),check"
+"box,checkbox"
+      MaskTunableValueString  "off,off,off,off,off,on,on"
+      MaskCallbackString      "|set_param(bdroot,'FixedStep',get_param(gcb,'Ts"
+"'));\nset_param(bdroot,'Solver','ode1');\nset_param(bdroot,'SolverMode','Sing"
+"leTasking');|||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskVariables	      "com_port=@1;Ts=@2;events_ot=@3;rd_timeout=@4;ma"
+"tlab_prior=@5;warning=@6;printout=@7;"
+      MaskInitialization      "set_param(bdroot,'FixedStep',get_param(gcb,'Ts'"
+"));\nset_param(bdroot,'Solver','ode1');\nset_param(bdroot,'SolverMode','Singl"
+"eTasking');\nmore off;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "COM3|0.5|2|80|ABOVE_NORMAL_PRIORITY|on|off"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "S-Function1"
+      Ports		      [4, 6, 0, 0, 0]
+      Position		      [510, 56, 625, 399]
+      ShowName		      off
+      Priority		      "1"
+      FontName		      "Arial"
+      FontSize		      14
+      FunctionName	      "udaq28LT_v2R13"
+      Parameters	      "com_port, Ts, events_ot, rd_timeout, matlab_pri"
+"or, warning, printout"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+      MaskType		      "uDAQ28/LT Communication Interface"
+      MaskDescription	      " (c) 2006 Martin Kamensky\n\nSerial port - USB "
+"serial port number assigned to uDAQ28/LT system\n\nSampling time (sec) - the "
+"lowest working value in Windows is about 0.04 - 0.05 s\n\nSample delayed (%) "
+"- number of events (percentually) when simulink loop can take more than time "
+"determined by sample time\n\nRead timeout (msec) - timeout for reading data f"
+"rom the port (the lowest working value is about 25 ms)\n\nMatlab priority :\n"
+"NORMAL_PRIORITY - priority of common Windows application\nABOVE_NORMAL_PRIORI"
+"TY - recommended - higher priority than common Windows application priority\n"
+"HIGH_PRIORITY - recommended - high priority \nREALTIME_PRIORITY - NOT recomme"
+"nded - takes almost all system resources\n"
+      MaskPromptString	      "Serial port:|Sample time (sec):|Sampling delaye"
+"d (%):|Read timeout (msec, lower than sample time):|Matlab priority|Warning i"
+"f delayed (error if unchecked)|Detailed timing and timeout  printout"
+      MaskStyleString	      "popup(COM1|COM2|COM3|COM4),edit,edit,edit,popup"
+"(NORMAL_PRIORITY|ABOVE_NORMAL_PRIORITY|HIGH_PRIORITY|REALTIME_PRIORITY),check"
+"box,checkbox"
+      MaskTunableValueString  "off,off,off,off,off,on,on"
+      MaskCallbackString      "|set_param(bdroot,'FixedStep',get_param(gcb,'Ts"
+"'));\nset_param(bdroot,'Solver','ode1');\nset_param(bdroot,'SolverMode','Sing"
+"leTasking');|||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskVariables	      "com_port=@1;Ts=@2;events_ot=@3;rd_timeout=@4;ma"
+"tlab_prior=@5;warning=@6;printout=@7;"
+      MaskInitialization      "set_param(bdroot,'FixedStep',get_param(gcb,'Ts'"
+"));\nset_param(bdroot,'Solver','ode1');\nset_param(bdroot,'SolverMode','Singl"
+"eTasking');\nmore off;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "COM3|0.5|2|80|ABOVE_NORMAL_PRIORITY|on|on"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Temperature"
+      Position		      [285, 83, 315, 97]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Filtered \ntemperature"
+      Position		      [285, 138, 315, 152]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "2"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Light intensity"
+      Position		      [285, 193, 315, 207]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "3"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Filtered \nlight intensity1"
+      Position		      [285, 248, 315, 262]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "4"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Fan current"
+      Position		      [285, 303, 315, 317]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "5"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Fan rpm"
+      Position		      [285, 358, 315, 372]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "6"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Temperature1"
+      Position		      [685, 83, 715, 97]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "7"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Filtered \ntemperature1"
+      Position		      [685, 138, 715, 152]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "8"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Light intensity1"
+      Position		      [685, 193, 715, 207]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "9"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Filtered \nlight intensity2"
+      Position		      [685, 248, 715, 262]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "10"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Fan current1"
+      Position		      [685, 303, 715, 317]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "11"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Fan rpm1"
+      Position		      [685, 358, 715, 372]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "12"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      1
+      DstBlock		      "Temperature"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      2
+      DstBlock		      "Filtered \ntemperature"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Bulb"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Fan"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      3
+      DstBlock		      "Light intensity"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      4
+      DstBlock		      "Filtered \nlight intensity1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      5
+      DstBlock		      "Fan current"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      6
+      DstBlock		      "Fan rpm"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "LED"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      1
+      DstBlock		      "Temperature1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      2
+      DstBlock		      "Filtered \ntemperature1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock1"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Bulb1"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Fan1"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      3
+      DstBlock		      "Light intensity1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      4
+      DstBlock		      "Filtered \nlight intensity2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      5
+      DstBlock		      "Fan current1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      6
+      DstBlock		      "Fan rpm1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "LED1"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      4
+    }
+  }
+}

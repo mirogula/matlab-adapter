@@ -1,0 +1,392 @@
+Model {
+  Name			  "tp405098"
+  Version		  3.0
+  SampleTimeColors	  off
+  ShowPortDataTypes	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Jun 10 19:33:08 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "mato"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 16 11:40:51 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:30>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  BufferReuse		  on
+  SimulationMode	  "normal"
+  Solver		  "ode1"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "time(end)"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  InitialStep		  "auto"
+  FixedStep		  "Ts"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Matrix"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  UnnecessaryDatatypeConvMsg "none"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  RTWInlineParameters	  off
+  BooleanDataType	  off
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "tp405098"
+    Location		    [9, 87, 540, 378]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [315, 65, 345, 95]
+      ShowName		      off
+      Value		      "inp"
+    }
+    Block {
+      BlockType		      MultiPortSwitch
+      Name		      "Multiport\nSwitch"
+      Ports		      [5, 1, 0, 0, 0]
+      Position		      [395, 45, 420, 215]
+      ShowName		      off
+      Inputs		      "4"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [470, 129, 500, 161]
+      ShowName		      off
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      on
+      SaveName		      "y_sim"
+      DataFormat	      "Matrix"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step2"
+      Position		      [15, 30, 45, 60]
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Time		      "0"
+      Before		      "0"
+      After		      "u_step-u0"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn"
+      Position		      [100, 27, 160, 63]
+      ShowName		      off
+      Numerator		      "[Ks ]"
+      Denominator	      "[1 a ]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn2"
+      Position		      [100, 92, 220, 128]
+      ShowName		      off
+      Numerator		      "[Ks*Tfd Ks*1]"
+      Denominator	      "[1 a ]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn3"
+      Position		      [100, 147, 160, 183]
+      ShowName		      off
+      Numerator		      "[Ks]"
+      Denominator	      "[1 a]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn5"
+      Position		      [260, 147, 320, 183]
+      ShowName		      off
+      Numerator		      "[Tfd 1]"
+      Denominator	      "[T1 1]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn6"
+      Position		      [100, 217, 160, 253]
+      ShowName		      off
+      Numerator		      "[Ks]"
+      Denominator	      "[1 a]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn7"
+      Position		      [180, 217, 240, 253]
+      ShowName		      off
+      Numerator		      "1"
+      Denominator	      "[T1 1]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn8"
+      Position		      [260, 217, 320, 253]
+      ShowName		      off
+      Numerator		      "[Tfd 1]"
+      Denominator	      "[T2 1]"
+    }
+    Block {
+      BlockType		      TransportDelay
+      Name		      "Transport\nDelay"
+      Position		      [195, 30, 225, 60]
+      ShowName		      off
+      DelayTime		      "Td"
+      InitialInput	      "0"
+      BufferSize	      "1024"
+    }
+    Block {
+      BlockType		      TransportDelay
+      Name		      "Transport\nDelay1"
+      Position		      [195, 150, 225, 180]
+      ShowName		      off
+      DelayTime		      "Td"
+      InitialInput	      "0"
+      BufferSize	      "1024"
+    }
+    Block {
+      BlockType		      TransportDelay
+      Name		      "Transport\nDelay2"
+      Position		      [240, 95, 270, 125]
+      ShowName		      off
+      DelayTime		      "Td"
+      InitialInput	      "0"
+      BufferSize	      "1024"
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn"
+      SrcPort		      1
+      DstBlock		      "Transport\nDelay"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Step2"
+      SrcPort		      1
+      Points		      [0, 0; 10, 0]
+      Branch {
+	DstBlock		"Transfer Fcn"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 65]
+	Branch {
+	  Points		  [0, 55]
+	  Branch {
+	    DstBlock		    "Transfer Fcn3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Transfer Fcn6"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  DstBlock		  "Transfer Fcn2"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn2"
+      SrcPort		      1
+      DstBlock		      "Transport\nDelay2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transport\nDelay"
+      SrcPort		      1
+      Points		      [145, 0; 0, 50]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn3"
+      SrcPort		      1
+      DstBlock		      "Transport\nDelay1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transport\nDelay1"
+      SrcPort		      1
+      DstBlock		      "Transfer Fcn5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [0, -20]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transport\nDelay2"
+      SrcPort		      1
+      Points		      [105, 0]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn5"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSwitch"
+      SrcPort		      1
+      Points		      [0, 15]
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn6"
+      SrcPort		      1
+      DstBlock		      "Transfer Fcn7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn7"
+      SrcPort		      1
+      DstBlock		      "Transfer Fcn8"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn8"
+      SrcPort		      1
+      Points		      [40, 0; 0, -35]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      5
+    }
+    Annotation {
+      Text		      "1"
+      Position		      [73, 28]
+      FontSize		      14
+    }
+    Annotation {
+      Text		      "2"
+      Position		      [74, 94]
+      FontSize		      14
+    }
+    Annotation {
+      Text		      "3"
+      Position		      [72, 152]
+      FontSize		      14
+    }
+    Annotation {
+      Text		      "4"
+      Position		      [75, 248]
+      FontSize		      14
+    }
+  }
+}

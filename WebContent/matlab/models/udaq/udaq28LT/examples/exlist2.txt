@@ -1,0 +1,181 @@
+EXPERIMENT 1
+
+Zakladna schema na manipulaciu so sustavou - 
+ovladanie vstupov, sledovanie vystupov.
+
+myschemes\init_udaq28LT_iov2.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 2
+
+Meranie prevodovej charakteristiky optickej vetvy (v 11 bodoch).
+
+Doba simulacie: 33 s
+myschemes\light\init_io_char_up_oloop.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 3
+
+Spojity I0 regulator - priamy kanal optickej vetvy.
+
+Doba simulacie: 35 s
+myschemes\light\init_I0_cont.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 4
+
+Diskretny I0 regulator - priamy kanal optickej vetvy.
+
+Doba simulacie: 35 s
+myschemes\light\init_I0_disc2.m
+
+-------------------------------------------------------------------------------
+
+EXPERIMENT 5
+
+Meranie prechodovej charakteristiky filtrovaneho kanala optickej vetvy.
+(Najprv sa sustava privedie do ustaleneho stavu PI regulatorom,
+ potom sa vstupny signal prepne na skokovy.)
+
+Doba simulacie: 180 s
+myschemes\light\init_step_resp1.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 6
+
+Spojity PI0 regulator - filtrovany kanal optickej vetvy.
+
+Doba simulacie: 100 s
+myschemes\light\init_PI0_windupless.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 8
+
+Experimentalne urcovanie nahradneho prenosu optickej vetvy (filtrovaneho kanala).
+
+Postup je zalozeny na odsimulovani prechodovej charakteristiky uzivatelom 
+vybrateho nahradneho prenosu
+a jej porovnanim s vykreslenycm priebehom prechodovej charalteristiky
+ziskanej v experimente cis. 5.
+Bez dat ziskanych odsimulovanim experimentu cis. 5 nefunguje !
+
+Doba simulacie: potrebny strojovy cas PC
+myschemes\light\init_ident1_aprox_sim.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 9
+
+Spojity PI1 regulator - filtrovany kanal optickej vetvy.
+
+Doba simulacie: 80 s
+myschemes\light\init_PI1_windupless.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 10
+
+Diskretny PI1 regulator - filtrovany kanal optickej vetvy.
+
+Doba simulacie: 80 s
+myschemes\light\init_PI1_disc_windupless.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 11
+
+(Kvazi) Spojity linearny PID regulator - filtrovany kanal optickej vetvy.
+
+Doba simulacie: 120 s
+myschemes\light\init_PID.m
+-------------------------------------------------------------------------------
+EXPERIMENT 13
+
+Diskretny linearny PI regulator doplneny ARW (antiwindup) strukturou
+- filtrovany kanal optickej vetvy.
+
+Doba simulacie:
+myschemes\light\init_PI_arw_disc.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 14
+
+Meranie prevodovej charakteristiky - priamy kanal tepelnej vetvy (v 11 bodoch).
+(Na dosiahnutie ustalenych stavov je pouzity PIarw regulator.)
+
+Ak je sustava zahriata, pred experimentom je potrebne najprv ju ochladit
+priblizne na teplotu okolia s pouzitim vstupu ventilatora !
+
+Doba simulacie:
+myschemes\temperature\init_io_char_up_cloop.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 15
+
+Meranie prechodovej charakteristiky priameho kanala tepelnej vetvy.
+(Najprv sa sustava privedie do ustaleneho stavu PIarw regulatorom,
+ potom sa vstupny signal prepne na skokovy.)
+
+Ak je sustava zahriata, pred experimentom je potrebne najprv ju ochladit
+priblizne na teplotu okolia s pouzitim vstupu ventilatora !
+
+Doba simulacie:
+myschemes\temperature\init_step_resp2.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 16
+
+Experimentalne urcovanie nahradneho prenosu tepelnej vetvy (priameho kanala).
+
+Postup je zalozeny na odsimulovani prechodovej charakteristiky uzivatelom 
+vybrateho nahradneho prenosu
+a jej porovnanim s vykreslenycm priebehom prechodovej charalteristiky
+ziskanej v experimente cis. 15.
+Bez dat ziskanych odsimulovanim experimentu cis. 15 nefunguje !
+
+Doba simulacie: potrebny strojovy cas PC
+myschemes\temperature\init_ident2_aprox_sim.m
+-------------------------------------------------------------------------------
+EXPERIMENT 17
+
+Spojity PI1 regulator - priamy kanal tepelnej vetvy.
+
+Doba simulacie:
+myschemes\temperature\init_PI1_windupless.m
+-------------------------------------------------------------------------------
+EXPERIMENT 19
+
+(Kvazi) Spojity linearny PID regulator s aktivnym chladenim 
+ - priamy kanal tepelnej vetvy.
+
+Doba simulacie:
+myschemes\temperature\init_PID.m
+
+-------------------------------------------------------------------------------
+EXPERIMENT 20
+
+Diskretny linearny PI regulator doplneny ARW (antiwindup) strukturou
+- priamy kanal tepelnej vetvy.
+
+Doba simulacie:
+myschemes\temperature\init_PI_arw_disc.m
+-------------------------------------------------------------------------------
+EXPERIMENT 21
+
+Spojity PID1 regulator - priamy kanal tepelnej vetvy.
+
+Doba simulacie:
+myschemes\temperature\init_PID1_windupless_tune3.m
+-------------------------------------------------------------------------------
+EXPERIMENT 22
+
+Zapojenie, v ktorom sa chladenie aj ohrievanie ovlada 1 vstupom.
+
+Doba simulacie: inf
+myschemes\temperature\init_bulb_fan.m
+-------------------------------------------------------------------------------
+EXPERIMENT 23
+
+Diskretny PI1 regulator - priamy kanal tepelnej vetvy.
+Akcny zasah je v intervale <-5, 5> s aktivnym chladenim,
+implementovane zadavanie pociatocnych podmienok.
+
+Doba simulacie: inf
+mychemes\temperature\init_bulb_fan_PI1_disc_windupless.m

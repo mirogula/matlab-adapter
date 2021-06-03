@@ -1,0 +1,124 @@
+
+Zaciatok riadku s nazvom suboru experimentu musi byt v tvare '$$n \'
+kde n je cislo experimentu, potom nasleduje popis experimentu,
+na konci suboru je tiez $$.
+
+Cisla experimentov nemusia byt usporiadane.
+
+Vykonaju sa len m-files nachadzajuce sa priamo alebo v podadresaroch 
+matlabroot\udaq\udaq28LT\myschemes.
+
+Editacia tohto suboru sluzi pre spustanie experimentov pomocou prikazu exnum,
+nema vplyv na obsah suborov exlist2.txt a exlist3.txt,
+ktore vypisuje prikaz exlist / exlist sk.
+
+---------------------------------------------------------------------------------
+
+$$1 \init_udaq28LT_iov2.m
+Zakladna schema na manipulaciu so sustavou - 
+ovladanie vstupov, sledovanie vystupov
+$$2 \light\init_io_char_up_oloop.m
+Meranie prevodovej charakteristiky optickej vetvy (v 11 bodoch).
+
+Doba simulacie: 33 s
+$$3 \light\init_I0_cont.m
+
+Spojity I0 regulator - priamy kanal optickej vetvy.
+
+Doba simulacie:
+$$4 \light\init_I0_disc2.m
+Diskretny I0 regulator - priamy kanal optickej vetvy.
+
+$$5 \light\init_step_resp1.m
+Meranie prechodovej charakteristiky filtrovaneho kanala optickej vetvy.
+(Najprv sa sustava privedie do ustaleneho stavu PI regulatorom,
+ potom sa vstupny signal prepne na skokovy.)
+
+Doba simulacie: 180 s
+$$6 \light\init_PI0_windupless.m
+Spojity PI0 regulator - filtrovany kanal optickej vetvy.
+
+Doba simulacie:
+$$8 \light\init_ident1_aprox_sim.m
+Experimentalne urcovanie nahradneho prenosu optickej vetvy (filtrovaneho kanala).
+
+Postup je zalozeny na odsimulovani prechodovej charakteristiky uzivatelom 
+vybrateho nahradneho prenosu
+a jej porovnanim s vykreslenym priebehom prechodovej charalteristiky
+ziskanej v experimente cis. 5.
+Bez dat ziskanych odsimulovanim experimentu cis. 5 nefunguje !
+
+Doba simulacie: potrebny strojovy cas PC
+$$9 \light\init_PI1_windupless.m
+Spojity PI1 regulator - filtrovany kanal optickej vetvy.
+
+Doba simulacie:
+$$10 \light\init_PI1_disc_windupless.m
+Diskretny PI1 regulator - filtrovany kanal optickej vetvy.
+
+Doba simulacie:
+$$11 \light\init_PID.m
+(Kvazi) Spojity linearny PID regulator - filtrovany kanal optickej vetvy.
+
+Doba simulacie:
+$$13 \light\init_PI_arw_disc.m
+Diskretny linearny PI regulator doplneny ARW (antiwindup) strukturou
+- filtrovany kanal optickej vetvy.
+
+Doba simulacie:
+$$14 \temperature\init_io_char_up_cloop.m
+Meranie prevodovej charakteristiky - priamy kanal tepelnej vetvy (v 11 bodoch).
+(Na dosiahnutie ustalenych stavov je pouzity PIarw regulator.)
+
+Ak je sustava zahriata, pred experimentom je potrebne najprv ju ochladit
+priblizne na teplotu okolia s pouzitim vstupu ventilatora !
+
+Doba simulacie:
+$$15 \temperature\init_step_resp2.m
+Meranie prechodovej charakteristiky priameho kanala tepelnej vetvy.
+(Najprv sa sustava privedie do ustaleneho stavu PIarw regulatorom,
+ potom sa vstupny signal prepne na skokovy.)
+
+Ak je sustava zahriata, pred experimentom je potrebne najprv ju ochladit
+priblizne na teplotu okolia s pouzitim vstupu ventilatora !
+
+Doba simulacie:
+$$16 \temperature\init_ident2_aprox_sim.m
+Experimentalne urcovanie nahradneho prenosu tepelnej vetvy (priameho kanala).
+
+Postup je zalozeny na odsimulovani prechodovej charakteristiky uzivatelom 
+vybrateho nahradneho prenosu
+a jej porovnanim s vykreslenym priebehom prechodovej charalteristiky
+ziskanej v experimente cis. 15.
+Bez dat ziskanych odsimulovanim experimentu cis. 15 nefunguje !
+
+Doba simulacie: potrebny strojovy cas PC
+$$17 \temperature\init_PI1_windupless.m
+Spojity PI1 regulator - priamy kanal tepelnej vetvy.
+
+Doba simulacie:
+$$19 \temperature\init_PID.m
+(Kvazi) Spojity linearny PID regulator s aktivnym chladenim 
+ - priamy kanal tepelnej vetvy.
+
+Doba simulacie:
+$$20 \temperature\init_PI_arw_disc.m
+Diskretny linearny PI regulator doplneny ARW (antiwindup) strukturou
+- priamy kanal tepelnej vetvy.
+
+Doba simulacie:
+$$21 \temperature\init_PID1_windupless_tune3.m
+Spojity PID1 regulator - priamy kanal tepelnej vetvy.
+
+Doba simulacie:
+$$22 \temperature\init_bulb_fan.m
+Zapojenie, v ktorom sa chladenie aj ohrievanie ovlada 1 vstupom.
+
+Doba simulacie: inf
+$$23 \temperature\init_bulb_fan_PI1_disc_windupless.m
+Diskretny PI1 regulator - priamy kanal tepelnej vetvy.
+Akcny zasah je v intervale <-5, 5> s aktivnym chladenim,
+implementovane zadavanie pociatocnych podmienok.
+
+Doba simulacie: inf
+$$

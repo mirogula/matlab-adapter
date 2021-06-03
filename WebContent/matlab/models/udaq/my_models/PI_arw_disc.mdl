@@ -1,0 +1,800 @@
+Model {
+  Name			  "tp362343"
+  Version		  3.0
+  SampleTimeColors	  off
+  ShowPortDataTypes	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Nov 13 21:00:50 2005"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "mato"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 16 11:36:23 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:48>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  BufferReuse		  on
+  SimulationMode	  "normal"
+  Solver		  "ode1"
+  SolverMode		  "SingleTasking"
+  StartTime		  "0.0"
+  StopTime		  "t_sim"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  InitialStep		  "auto"
+  FixedStep		  "Ts"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Matrix"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  UnnecessaryDatatypeConvMsg "none"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  RTWInlineParameters	  off
+  BooleanDataType	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "tp362343"
+    Location		    [11, 87, 627, 311]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Fan"
+      Position		      [310, 110, 340, 140]
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Led"
+      Position		      [255, 140, 285, 170]
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Light\nintensity1"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [545, 130, 575, 160]
+      FontSize		      14
+      Floating		      off
+      Location		      [475, 409, 889, 730]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "30"
+      YMin		      "0"
+      YMax		      "100"
+      SaveToWorkspace	      on
+      SaveName		      "yl"
+      DataFormat	      "Matrix"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [505, 23, 510, 72]
+      ShowName		      off
+      FontSize		      14
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [3, 1, 0, 0, 0]
+      Position		      [505, 126, 510, 174]
+      ShowName		      off
+      FontSize		      14
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "PI + arw"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [170, 72, 240, 118]
+      FontSize		      14
+      ShowPortLabels	      on
+      System {
+	Name			"PI + arw"
+	Location		[245, 110, 910, 495]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [80, 123, 110, 137]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "1"
+	  PortWidth	  "-1"
+	  SampleTime		  "-1"
+	  DataType		  "auto"
+	  SignalType		  "auto"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [190, 65, 220, 95]
+	  ShowName		  off
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Gain			  "P"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain3"
+	  Position		  [190, 140, 220, 170]
+	  ShowName		  off
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Gain			  "I*Ts"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation1"
+	  Position		  [470, 140, 500, 170]
+	  ShowName		  off
+	  FontName		  "Arial"
+	  FontSize		  14
+	  UpperLimit		  "Umax"
+	  LowerLimit		  "Umin"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1, 0, 0, 0]
+	  Position		  [385, 210, 405, 230]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  FontName		  "Arial"
+	  FontSize		  14
+	  IconShape		  "round"
+	  Inputs		  "+-|"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1, 0, 0, 0]
+	  Position		  [435, 210, 455, 230]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  FontName		  "Arial"
+	  FontSize		  14
+	  IconShape		  "round"
+	  Inputs		  "+-|"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum5"
+	  Ports			  [2, 1, 0, 0, 0]
+	  Position		  [250, 145, 270, 165]
+	  ShowName		  off
+	  FontName		  "Arial"
+	  FontSize		  14
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum6"
+	  Ports			  [2, 1, 0, 0, 0]
+	  Position		  [410, 145, 430, 165]
+	  ShowName		  off
+	  FontName		  "Arial"
+	  FontSize		  14
+	  IconShape		  "round"
+	  Inputs		  "++|"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Position		  [330, 201, 365, 239]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  14
+	  X0			  "0"
+	  SampleTime		  "Ts"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [555, 148, 585, 162]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Unit Delay"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain3"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  Points		  [-65, 0]
+	  DstBlock		  "Sum5"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Sum6"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Sum3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Saturation1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Saturation1"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "Sum3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [0, 0; 50, 0]
+	  Branch {
+	    Points		    [0, -50]
+	    DstBlock		    "Gain"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 25]
+	    DstBlock		    "Gain3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum5"
+	  SrcPort		  1
+	  Points		  [120, 0]
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Labels		    [1, 0]
+	    DstBlock		    "Sum6"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [195, 0]
+	  DstBlock		  "Sum6"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Repeating\nSequence"
+      Ports		      [0, 1, 0, 0, 0]
+      Position		      [30, 80, 60, 110]
+      SourceBlock	      "simulink/Sources/Repeating\nSequence"
+      SourceType	      "Repeating table"
+      rep_seq_t		      "[0 25 25+Ts 60 60+Ts 80]"
+      rep_seq_y		      "[20 20 40 40 30 30]"
+    }
+    Block {
+      BlockType		      Saturate
+      Name		      "Saturation2"
+      Position		      [275, 80, 305, 110]
+      ShowName		      off
+      FontName		      "Arial"
+      FontSize		      12
+      UpperLimit	      "Umax"
+      LowerLimit	      "Umin"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [115, 85, 135, 105]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Temperature1"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [545, 35, 575, 65]
+      FontSize		      14
+      Floating		      off
+      Location		      [557, 59, 968, 385]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "30"
+      YMin		      "15"
+      YMax		      "50"
+      SaveToWorkspace	      on
+      SaveName		      "yt"
+      DataFormat	      "Matrix"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Thermal Plant\n I/O Interface"
+      Ports		      [3, 4, 0, 0, 0]
+      Position		      [375, 74, 475, 171]
+      ShowName		      off
+      FontName		      "Arial"
+      ShowPortLabels	      on
+      MaskDisplay	      "disp('Thermo-optical\\nPlant\\nI/O Interface')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Thermal Plant\n I/O Interface"
+	Location		[137, 84, 903, 428]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Bulb1"
+	  Position		  [85, 173, 115, 187]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "1"
+	  PortWidth	  "-1"
+	  SampleTime		  "-1"
+	  DataType		  "auto"
+	  SignalType		  "auto"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Fan1"
+	  Position		  [85, 258, 115, 272]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "2"
+	  PortWidth	  "-1"
+	  SampleTime		  "-1"
+	  DataType		  "auto"
+	  SignalType		  "auto"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "LED1"
+	  Position		  [85, 343, 115, 357]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "3"
+	  PortWidth	  "-1"
+	  SampleTime		  "-1"
+	  DataType		  "auto"
+	  SignalType		  "auto"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock1"
+	  Position		  [90, 81, 120, 109]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  DisplayTime		  off
+	  Decimation		  "10"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "S-Function1"
+	  Ports			  [4, 6, 0, 0, 0]
+	  Position		  [165, 51, 280, 394]
+	  ShowName		  off
+	  Priority		  "1"
+	  FontName		  "Arial"
+	  FontSize		  14
+	  SourceBlock		  "udaq28LT_lib/S-Function1"
+	  SourceType		  "uDAQ28/LT Communication Interface"
+	  com_port		  "COM3"
+	  Ts			  "Ts"
+	  events_ot		  "2"
+	  rd_timeout		  "Ts/2*1000"
+	  matlab_prior		  "ABOVE_NORMAL_PRIORITY"
+	  warning		  "on"
+	  printout		  "off"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  Position		  [335, 295, 355, 315]
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  Position		  [335, 350, 355, 370]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Temperature1"
+	  Position		  [335, 78, 365, 92]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Filtered \ntemperature1"
+	  Position		  [335, 133, 365, 147]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Light intensity1"
+	  Position		  [335, 188, 365, 202]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Filtered \nlight intensity2"
+	  Position		  [335, 243, 365, 257]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "4"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  1
+	  DstBlock		  "Temperature1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  2
+	  DstBlock		  "Filtered \ntemperature1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Clock1"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Bulb1"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Fan1"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  3
+	  DstBlock		  "Light intensity1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  4
+	  DstBlock		  "Filtered \nlight intensity2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  5
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  6
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "LED1"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  4
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "u"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [330, 14, 360, 46]
+      ExtModeUploadOption     "log"
+      Floating		      off
+      Location		      [15, 408, 467, 731]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "80"
+      YMin		      "-0.5"
+      YMax		      "5.5"
+      SaveToWorkspace	      on
+      SaveName		      "u"
+      DataFormat	      "Matrix"
+      Decimation	      "10"
+      SampleInput	      on
+      SampleTime	      "Ts"
+    }
+    Line {
+      SrcBlock		      "Saturation2"
+      SrcPort		      1
+      Points		      [-5, 0; 10, 0]
+      Branch {
+	DstBlock		"u"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Thermal Plant\n I/O Interface"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "PI + arw"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Repeating\nSequence"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	DstBlock		"Sum"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 105; 405, 0]
+	DstBlock		"Mux3"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "PI + arw"
+      SrcPort		      1
+      DstBlock		      "Saturation2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "Temperature1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      Points		      [0, -5]
+      DstBlock		      "Light\nintensity1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Fan"
+      SrcPort		      1
+      DstBlock		      "Thermal Plant\n I/O Interface"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Led"
+      SrcPort		      1
+      DstBlock		      "Thermal Plant\n I/O Interface"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Thermal Plant\n I/O Interface"
+      SrcPort		      1
+      Points		      [5, 0; 0, -50]
+      DstBlock		      "Mux2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Thermal Plant\n I/O Interface"
+      SrcPort		      2
+      Points		      [10, 0]
+      DstBlock		      "Mux2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Thermal Plant\n I/O Interface"
+      SrcPort		      3
+      DstBlock		      "Mux3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Thermal Plant\n I/O Interface"
+      SrcPort		      4
+      Points		      [0, 0]
+      Branch {
+	Points			[10, 0]
+	DstBlock		"Mux3"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 30; -355, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+    }
+  }
+}

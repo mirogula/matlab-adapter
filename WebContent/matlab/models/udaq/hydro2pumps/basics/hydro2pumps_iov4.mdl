@@ -1,0 +1,1112 @@
+Model {
+  Name			  "hydro2pumps_iov4"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed May 29 13:29:49 2002"
+  Creator		  "dmedonza"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "student"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Oct 09 11:12:47 2009"
+  ModelVersionFormat	  "1.%<AutoIncrement:418>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode1"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "t_stop"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "T"
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  off
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_vc.tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aExtMode=0 -aExtModeTes"
+"ting=0 -aFoldNonRolledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1"
+" -aGenerateReport=0 -aIgnoreCustomStorageClasses=1 -aIncDataTypeInIds=0 -aInc"
+"HierarchyInIds=0 -aInlineInvariantSignals=0 -aInlinedPrmAccess=\"Literals\" -"
+"aLocalBlockOutputs=1 -aLogVarNameModifier=\"rt_\" -aMaxRTWIdLen=31 -aPrefixMo"
+"delToSubsysFcnNames=1 -aRTWVerbose=1 -aRollThreshold=5 -aShowEliminatedStatem"
+"ents=0"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "hydro2pumps_iov4"
+    Location		    [162, 151, 1127, 604]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Scope
+      Name		      "Calibration1"
+      Ports		      [1]
+      Position		      [405, 375, 435, 405]
+      Location		      [6, 395, 485, 741]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "20"
+      YMin		      "0"
+      YMax		      "100"
+      SaveName		      "l"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain 1"
+      Position		      [630, 34, 730, 86]
+      Gain		      "calibParams(2)"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain 2"
+      Position		      [635, 140, 735, 200]
+      Gain		      "calibParams(4)"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain 3"
+      Position		      [195, 127, 225, 153]
+      Gain		      "4"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain 4"
+      Position		      [635, 247, 740, 303]
+      Gain		      "calibParams(6)"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain 6"
+      Position		      [195, 77, 225, 103]
+      Gain		      "4"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Hydraulic Plant\n I/O Interface1"
+      Ports		      [7, 7]
+      Position		      [245, 69, 350, 411]
+      ShowName		      off
+      FontName		      "Arial"
+      TreatAsAtomicUnit	      off
+      MaskDisplay	      "disp('Two Pumps\\nHydraulic\\nPlant\\nI/O Inter"
+"face')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Hydraulic Plant\n I/O Interface1"
+	Location		[2, 82, 1014, 730]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "pump 1"
+	  Position		  [105, 163, 135, 177]
+	  FontName		  "Arial"
+	  FontSize		  14
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pump 2"
+	  Position		  [105, 218, 135, 232]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "valve 1"
+	  Position		  [105, 273, 135, 287]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "valve 1-2"
+	  Position		  [105, 328, 135, 342]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "valve 2"
+	  Position		  [105, 383, 135, 397]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "valve 2-3"
+	  Position		  [105, 438, 135, 452]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "6"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "valve 3"
+	  Position		  [100, 493, 130, 507]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "7"
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock1"
+	  Position		  [105, 101, 135, 129]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Decimation		  "10"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "S-Function1"
+	  Ports			  [8, 7]
+	  Position		  [180, 82, 330, 533]
+	  ShowName		  off
+	  Priority		  "1"
+	  FontName		  "Arial"
+	  FontSize		  14
+	  SourceBlock		  "hydro2pumps_lib/S-Function1"
+	  SourceType		  "hydro2pumps Communication Interface"
+	  com_port		  "COM4"
+	  Ts			  "T"
+	  events_ot		  "2"
+	  rd_timeout		  "125"
+	  matlab_prior		  "ABOVE_NORMAL_PRIORITY"
+	  warning		  on
+	  printout		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "level 1"
+	  Position		  [380, 108, 410, 122]
+	  FontName		  "Arial"
+	  FontSize		  14
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "filtered level 1"
+	  Position		  [380, 173, 410, 187]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "level 2"
+	  Position		  [380, 238, 410, 252]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "filtered level 2"
+	  Position		  [380, 303, 410, 317]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "level 3"
+	  Position		  [380, 368, 410, 382]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "filtered level 3"
+	  Position		  [380, 433, 410, 447]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "6"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "calibration value"
+	  Position		  [380, 498, 410, 512]
+	  FontName		  "Arial"
+	  FontSize		  14
+	  Port			  "7"
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  1
+	  DstBlock		  "level 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  2
+	  DstBlock		  "filtered level 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Clock1"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "pump 1"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "pump 2"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  3
+	  DstBlock		  "level 2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  4
+	  DstBlock		  "filtered level 2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  5
+	  DstBlock		  "level 3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  6
+	  DstBlock		  "filtered level 3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "valve 1"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "valve 1-2"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "valve 2"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "valve 2-3"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "S-Function1"
+	  SrcPort		  7
+	  DstBlock		  "calibration value"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "valve 3"
+	  SrcPort		  1
+	  DstBlock		  "S-Function1"
+	  DstPort		  8
+	}
+      }
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [2, 1]
+      Position		      [380, 71, 385, 149]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux4"
+      Ports		      [2, 1]
+      Position		      [410, 164, 425, 266]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux5"
+      Ports		      [2, 1]
+      Position		      [385, 266, 395, 364]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Saturate
+      Name		      "Saturation2"
+      Position		      [140, 75, 170, 105]
+      UpperLimit	      "100"
+      LowerLimit	      "0"
+    }
+    Block {
+      BlockType		      Saturate
+      Name		      "Saturation3"
+      Position		      [140, 125, 170, 155]
+      UpperLimit	      "100"
+      LowerLimit	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [595, 253, 615, 297]
+      ShowName		      off
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [590, 38, 610, 82]
+      ShowName		      off
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      Ports		      [2, 1]
+      Position		      [595, 148, 615, 192]
+      ShowName		      off
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "h1 (m)"
+      Ports		      [1]
+      Position		      [820, 45, 850, 75]
+      Location		      [6, 595, 487, 936]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "60"
+      YMin		      "0.238572"
+      YMax		      "0.263684"
+      SaveToWorkspace	      on
+      SaveName		      "level1"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "h2 (m)"
+      Ports		      [1]
+      Position		      [820, 155, 850, 185]
+      Location		      [341, 591, 822, 932]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "60"
+      YMin		      "0.2499"
+      YMax		      "0.250425"
+      SaveToWorkspace	      on
+      SaveName		      "level2"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "h3 (m)"
+      Ports		      [1]
+      Position		      [825, 260, 855, 290]
+      Location		      [794, 594, 1275, 935]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "60"
+      YMin		      "0.2561"
+      YMax		      "0.2571"
+      SaveToWorkspace	      on
+      SaveName		      "level3"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "offset 1"
+      Position		      [475, 54, 550, 86]
+      Value		      "calibParams(1)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "offset 2"
+      Position		      [480, 164, 555, 196]
+      Value		      "calibParams(3)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "offset 3"
+      Position		      [475, 269, 550, 301]
+      Value		      "calibParams(5)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "pump1"
+      Position		      [15, 73, 80, 107]
+      Value		      "pumps(1)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "pump2"
+      Position		      [15, 123, 80, 157]
+      Value		      "pumps(2)"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "tank 1"
+      Ports		      [1]
+      Position		      [415, 95, 445, 125]
+      Location		      [6, 472, 522, 908]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "10"
+      YMin		      "478"
+      YMax		      "482"
+      SaveToWorkspace	      on
+      SaveName		      "tank1"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "tank 2"
+      Ports		      [1]
+      Position		      [440, 200, 470, 230]
+      Location		      [6, 60, 498, 440]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "20"
+      YMin		      "762.5"
+      YMax		      "820"
+      SaveToWorkspace	      on
+      SaveName		      "tank2"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "tank 3"
+      Ports		      [1]
+      Position		      [425, 300, 455, 330]
+      Location		      [496, 652, 823, 912]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "10"
+      YMin		      "685"
+      YMax		      "690"
+      SaveToWorkspace	      on
+      SaveName		      "tank3"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleInput	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "valve 1"
+      Position		      [15, 175, 65, 205]
+      Value		      "valves(1)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "valve 1-1"
+      Position		      [65, 224, 120, 256]
+      Value		      "valves(2)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "valve 2"
+      Position		      [15, 274, 65, 306]
+      Value		      "valves(3)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "valve 2-1"
+      Position		      [65, 323, 120, 357]
+      Value		      "valves(4)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "valve 3"
+      Position		      [15, 373, 65, 407]
+      Value		      "valves(5)"
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      DstBlock		      "tank 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux5"
+      SrcPort		      1
+      DstBlock		      "tank 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "valve 1"
+      SrcPort		      1
+      DstBlock		      "Hydraulic Plant\n I/O Interface1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "valve 1-1"
+      SrcPort		      1
+      DstBlock		      "Hydraulic Plant\n I/O Interface1"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "valve 2"
+      SrcPort		      1
+      DstBlock		      "Hydraulic Plant\n I/O Interface1"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "valve 2-1"
+      SrcPort		      1
+      DstBlock		      "Hydraulic Plant\n I/O Interface1"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "valve 3"
+      SrcPort		      1
+      DstBlock		      "Hydraulic Plant\n I/O Interface1"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Hydraulic Plant\n I/O Interface1"
+      SrcPort		      1
+      Points		      [-5, 0; 10, 0]
+      Branch {
+	DstBlock		"Mux3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -40]
+	DstBlock		"Sum2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Hydraulic Plant\n I/O Interface1"
+      SrcPort		      2
+      Points		      [0, -10]
+      DstBlock		      "Mux3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Hydraulic Plant\n I/O Interface1"
+      SrcPort		      3
+      Points		      [-5, 0; 15, 0]
+      Branch {
+	DstBlock		"Mux4"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"Sum3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Hydraulic Plant\n I/O Interface1"
+      SrcPort		      4
+      DstBlock		      "Mux4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Hydraulic Plant\n I/O Interface1"
+      SrcPort		      5
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"Mux5"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -25]
+	DstBlock		"Sum1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Hydraulic Plant\n I/O Interface1"
+      SrcPort		      6
+      DstBlock		      "Mux5"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Hydraulic Plant\n I/O Interface1"
+      SrcPort		      7
+      DstBlock		      "Calibration1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux4"
+      SrcPort		      1
+      DstBlock		      "tank 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "offset 1"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      DstBlock		      "Gain 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain 6"
+      SrcPort		      1
+      DstBlock		      "Hydraulic Plant\n I/O Interface1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain 3"
+      SrcPort		      1
+      DstBlock		      "Hydraulic Plant\n I/O Interface1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Saturation2"
+      SrcPort		      1
+      DstBlock		      "Gain 6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Saturation3"
+      SrcPort		      1
+      DstBlock		      "Gain 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "offset 2"
+      SrcPort		      1
+      DstBlock		      "Sum3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      DstBlock		      "Gain 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pump1"
+      SrcPort		      1
+      DstBlock		      "Saturation2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pump2"
+      SrcPort		      1
+      DstBlock		      "Saturation3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain 1"
+      SrcPort		      1
+      DstBlock		      "h1 (m)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain 2"
+      SrcPort		      1
+      DstBlock		      "h2 (m)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "offset 3"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "Gain 4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain 4"
+      SrcPort		      1
+      DstBlock		      "h3 (m)"
+      DstPort		      1
+    }
+  }
+}

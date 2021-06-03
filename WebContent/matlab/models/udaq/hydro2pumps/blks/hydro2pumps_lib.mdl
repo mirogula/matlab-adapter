@@ -1,0 +1,676 @@
+Library {
+  Name			  "hydro2pumps_lib"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  LibraryLinkDisplay	  "none"
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Jan 12 00:44:12 2007"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "mato"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Nov 11 14:47:38 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:17>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  SimulationMode	  "normal"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "hydro2pumps_lib"
+    Location		    [2, 74, 1014, 722]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Inport
+      Name		      "Pump 1"
+      Position		      [490, 128, 520, 142]
+      FontName		      "Arial"
+      FontSize		      14
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Pump 2"
+      Position		      [490, 183, 520, 197]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "2"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Valve 1"
+      Position		      [490, 238, 520, 252]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "3"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Valve 1-2"
+      Position		      [490, 293, 520, 307]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "4"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Valve 2"
+      Position		      [490, 348, 520, 362]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "5"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Valve 2-3"
+      Position		      [490, 403, 520, 417]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "6"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "pump 1"
+      Position		      [70, 128, 100, 142]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "7"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "pump 2"
+      Position		      [70, 183, 100, 197]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "8"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "valve 1"
+      Position		      [70, 238, 100, 252]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "9"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "valve 1-2"
+      Position		      [70, 293, 100, 307]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "10"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "valve 2"
+      Position		      [70, 348, 100, 362]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "11"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "valve 2-3"
+      Position		      [70, 403, 100, 417]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "12"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Valve 3"
+      Position		      [490, 458, 520, 472]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "13"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "valve 3"
+      Position		      [65, 458, 95, 472]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "14"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [490, 66, 520, 94]
+      FontName		      "Arial"
+      FontSize		      14
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock1"
+      Position		      [70, 66, 100, 94]
+      FontName		      "Arial"
+      FontSize		      14
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "S-Function"
+      Ports		      [8, 7]
+      Position		      [565, 48, 720, 497]
+      ShowName		      off
+      Priority		      "1"
+      FontName		      "Arial"
+      FontSize		      14
+      FunctionName	      "hydro2pumps_v2R13"
+      Parameters	      "com_port, Ts, events_ot, rd_timeout, matlab_pri"
+"or, warning, printout"
+      MaskType		      "hydro2pumps Communication Interface"
+      MaskDescription	      " (c) 2007 Martin Kamensky\n\nSerial port - USB "
+"serial port number assigned to hydro2pumps system\n\nSampling time (sec) - th"
+"e lowest working value in Windows is about 0.04 - 0.05 s\n\nSample delayed (%"
+") - number of events (percentually) when simulink loop can take more than tim"
+"e determined by sample time\n\nRead timeout (msec) - timeout for reading data"
+" from the port (the lowest working value is about 25 ms)\n\nMatlab priority :"
+"\nNORMAL_PRIORITY - priority of common Windows application\nABOVE_NORMAL_PRIO"
+"RITY - recommended - higher priority than common Windows application priority"
+"\nHIGH_PRIORITY - recommended - high priority \nREALTIME_PRIORITY - NOT recom"
+"mended - takes almost all system resources\n"
+      MaskPromptString	      "Serial port:|Sample time (sec):|Sampling delaye"
+"d (%):|Read timeout (msec, lower than sample time):|Matlab priority|Warning i"
+"f delayed (error if unchecked)|Detailed timing and timeout  printout"
+      MaskStyleString	      "popup(COM1|COM2|COM3|COM4),edit,edit,edit,popup"
+"(NORMAL_PRIORITY|ABOVE_NORMAL_PRIORITY|HIGH_PRIORITY|REALTIME_PRIORITY),check"
+"box,checkbox"
+      MaskTunableValueString  "off,off,off,off,off,on,on"
+      MaskCallbackString      "|set_param(bdroot,'FixedStep',get_param(gcb,'Ts"
+"'));\nset_param(bdroot,'Solver','ode1');|||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "com_port=@1;Ts=@2;events_ot=@3;rd_timeout=@4;ma"
+"tlab_prior=@5;warning=@6;printout=@7;"
+      MaskInitialization      "set_param(bdroot,'FixedStep',get_param(gcb,'Ts'"
+"));\nset_param(bdroot,'Solver','ode1');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "COM4|0.5|2|250|ABOVE_NORMAL_PRIORITY|on|off"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "S-Function1"
+      Ports		      [8, 7]
+      Position		      [145, 47, 295, 498]
+      ShowName		      off
+      Priority		      "1"
+      FontName		      "Arial"
+      FontSize		      14
+      FunctionName	      "hydro2pumps_v1R13"
+      Parameters	      "com_port, Ts, events_ot, rd_timeout, matlab_pri"
+"or, warning, printout"
+      MaskType		      "hydro2pumps Communication Interface"
+      MaskDescription	      " (c) 2007 Martin Kamensky\n\nSerial port - USB "
+"serial port number assigned to hydro2pumps system\n\nSampling time (sec) - th"
+"e lowest working value in Windows is about 0.04 - 0.05 s\n\nSample delayed (%"
+") - number of events (percentually) when simulink loop can take more than tim"
+"e determined by sample time\n\nRead timeout (msec) - timeout for reading data"
+" from the port (the lowest working value is about 25 ms)\n\nMatlab priority :"
+"\nNORMAL_PRIORITY - priority of common Windows application\nABOVE_NORMAL_PRIO"
+"RITY - recommended - higher priority than common Windows application priority"
+"\nHIGH_PRIORITY - recommended - high priority \nREALTIME_PRIORITY - NOT recom"
+"mended - takes almost all system resources\n"
+      MaskPromptString	      "Serial port:|Sample time (sec):|Sampling delaye"
+"d (%):|Read timeout (msec, lower than sample time):|Matlab priority|Warning i"
+"f delayed (error if unchecked)|Detailed timing and timeout  printout"
+      MaskStyleString	      "popup(COM1|COM2|COM3|COM4),edit,edit,edit,popup"
+"(NORMAL_PRIORITY|ABOVE_NORMAL_PRIORITY|HIGH_PRIORITY|REALTIME_PRIORITY),check"
+"box,checkbox"
+      MaskTunableValueString  "off,off,off,off,off,on,on"
+      MaskCallbackString      "|set_param(bdroot,'FixedStep',get_param(gcb,'Ts"
+"'));\nset_param(bdroot,'Solver','ode1');|||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "com_port=@1;Ts=@2;events_ot=@3;rd_timeout=@4;ma"
+"tlab_prior=@5;warning=@6;printout=@7;"
+      MaskInitialization      "set_param(bdroot,'FixedStep',get_param(gcb,'Ts'"
+"));\nset_param(bdroot,'Solver','ode1');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "COM4|0.5|2|250|ABOVE_NORMAL_PRIORITY|on|off"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Level 1"
+      Position		      [765, 73, 795, 87]
+      FontName		      "Arial"
+      FontSize		      14
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Filtered level 1"
+      Position		      [765, 138, 795, 152]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "2"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Level 2"
+      Position		      [765, 203, 795, 217]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "3"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Filtered level 2"
+      Position		      [765, 268, 795, 282]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "4"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Level 3"
+      Position		      [765, 333, 795, 347]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "5"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Filtered level 3"
+      Position		      [765, 398, 795, 412]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "6"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Calibration value"
+      Position		      [765, 463, 795, 477]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "7"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "level 1"
+      Position		      [345, 73, 375, 87]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "8"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "filtered level 1"
+      Position		      [345, 138, 375, 152]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "9"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "level 2"
+      Position		      [345, 203, 375, 217]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "10"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "filtered level 2"
+      Position		      [345, 268, 375, 282]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "11"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "level 3"
+      Position		      [345, 333, 375, 347]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "12"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "filtered level 3"
+      Position		      [345, 398, 375, 412]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "13"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "calibration value"
+      Position		      [345, 463, 375, 477]
+      FontName		      "Arial"
+      FontSize		      14
+      Port		      "14"
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      1
+      DstBlock		      "Level 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      2
+      DstBlock		      "Filtered level 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pump 1"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Pump 2"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      3
+      DstBlock		      "Level 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      4
+      DstBlock		      "Filtered level 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      5
+      DstBlock		      "Level 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      6
+      DstBlock		      "Filtered level 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Valve 1"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Valve 1-2"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Valve 2"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "Valve 2-3"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "S-Function"
+      SrcPort		      7
+      DstBlock		      "Calibration value"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      1
+      DstBlock		      "level 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      2
+      DstBlock		      "filtered level 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock1"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pump 1"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "pump 2"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      3
+      DstBlock		      "level 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      4
+      DstBlock		      "filtered level 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      5
+      DstBlock		      "level 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      6
+      DstBlock		      "filtered level 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "valve 1"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "valve 1-2"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "valve 2"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "valve 2-3"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "S-Function1"
+      SrcPort		      7
+      DstBlock		      "calibration value"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Valve 3"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      8
+    }
+    Line {
+      SrcBlock		      "valve 3"
+      SrcPort		      1
+      DstBlock		      "S-Function1"
+      DstPort		      8
+    }
+    Annotation {
+      Position		      [535, 7]
+    }
+  }
+}
